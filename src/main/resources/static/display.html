@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Data Display</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+<header class="bg-blue-500 shadow-md rounded-b-lg">
+    <nav class="container mx-auto px-4 py-3 flex items-center justify-between">
+        <a href="index.html" class="text-white text-xl font-semibold">User Data App</a>
+        <div class="space-x-4">
+            <a href="index.html" class="text-gray-200 hover:text-white transition-colors duration-300">Home</a>
+            <a href="display.html" class="text-gray-200 hover:text-white transition-colors duration-300">Display Data</a>
+        </div>
+    </nav>
+</header>
+<main id="display-content" class="container mx-auto px-4 py-8">
+    <div class="bg-white rounded-lg shadow-lg p-8">
+        <h1 class="text-2xl font-semibold text-blue-600 text-center mb-6">User Data</h1>
+        <div id="data-container" class="mt-6">
+            <p class="text-gray-700 text-center">Loading data...</p>
+        </div>
+    </div>
+</main>
+<script src="display.js"></script>
+</body>
+</html>
+
